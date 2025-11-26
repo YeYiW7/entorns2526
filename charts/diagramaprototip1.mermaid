@@ -1,0 +1,18 @@
+flowchart LR
+
+subgraph Bloc_Cliente ["🌐Cliente(Front End)"]
+    VISTA["Vista<br/>(Input Nom)"]
+    DAO_CLIENT["DaoClient<br/>(GetUserName)"]
+    VISTA <--> DAO_CLIENT
+end
+
+DAO_CLIENT -- "Request HTTP" --> WS
+WS -- "Response HTTP" --> DAO_CLIENT
+
+subgraph Bloc_Servidor ["Servidor(BackEnd)"]
+    WS["WebService<br/>(getUserByName)"]
+    DAO_SERVER["Dao<br/>(getUserByName)"]
+    LISTA["List Datos Users"]
+    WS <--> DAO_SERVER
+    DAO_SERVER <--> LISTA
+end

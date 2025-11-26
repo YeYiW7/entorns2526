@@ -18,3 +18,6 @@ Aquí configurem VsCode
 - Iteració 5: 13/04 - 29/04 (09h) - Pegat i Testing
 
 # Portatip 1
+Connectar Client / Servidor. Consultar dades d'usuari per nom.
+
+[Diagrama d'arquitectura prototip 1](charts/diagramaprototip1.mermaid)
