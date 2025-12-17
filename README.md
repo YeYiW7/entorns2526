@@ -29,8 +29,9 @@ Definició del End-Point del WebService:
 
 URL Server desenvolupament: http://localhost:5000/
 
-| URL       |  Method       | Paràmetres                     | Descripció        | Output        |
-------------|---------------|--------------------------------|-------------------|---------------|
-| /user     | Get           | username <String> (obligatori) | Retornem la informació de | {"code_response=1, descripcio="" , name="Gustavo Lloris", username="glloris",
-password="12345", rol="tutor", email="glloris@xtec.cat"} |
-
+| URL       |  Method       | Paràmetres                     | Descripció                | Output        |
+------------|---------------|--------------------------------|---------------------------|---------------|
+| /user     | Get           | username <String> (obligatori) | Retornem la informació de | {"code_response=1, descripcio="" , 
+|-----------|---------------|--------------------------------|---------------------------|
+name="Gustavo Lloris" username="glloris", password="12345", rol="tutor", email="glloris@xtec.cat"} |
+---------------------------------------------------------------------------------------------------|
